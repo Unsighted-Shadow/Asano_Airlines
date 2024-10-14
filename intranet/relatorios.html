@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Asano Airlines</title>
+    <script src="relatorios.js"></script>
+</head>
+<header>
+    <h1>RELATÓRIOS</h1>
+    <a href="https://docs.google.com">Google Docs</a>
+    <a href="https://sheets.google.com">Google Sheets</a>
+    <a href="https://docs.google.com/forms">Google Forms</a>
+</header>
+<body>
+    <input type="text" name="search"><br />
+    <button id="search" onclick="searchFile()">Pesquisar</button>
+    <br /><br />
+    Inserir Relatório
+    <br />
+    <select name="type">
+        <option>Selecione--</option>
+        <option id="type_o">Ocorrência</option>
+        <option id="type_s">Vendas</option>
+        <option id="type_e">Funcionário</option>
+        <option id="type_f">Feedback</option>
+        <option id="type_p">Enquete</option>
+        <option id="type_su">Fornecedor</option>
+        <option id="type_m">Manutenção</option>
+    </select>
+    <br />
+    Data<br>
+    <input id="date" class="date" type="date" name="date">
+    <br />
+    Inscrição<br>
+    <input id="name" type="text" name="name">
+    <br />
+    Relatório<br>
+    <input id="url" type="url" name="url"><br />
+    <button id="file" onclick="addElement()">Adicionar Relatório</button>
+    <br /><br />
+    <table id="content" border="2">
+        <tr>
+            <td>Tipo</td>
+            <td>Data</td>
+            <td>Inscrição</td>
+            <td>Relatório</td>
+            <td hidden>id</td>
+        </tr>
+    </table>
+</body>
+</html>
