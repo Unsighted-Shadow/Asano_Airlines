@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -123,6 +123,9 @@
     </table>
     </div>
     <div>
+        <h3 hidden id="thx">Obrigado! Seu feedback é muito importante para nós!</h3>
+    </div>
+    <div>
         <h2>DEIXE SEU FEEDBACK!!!</h2>
         Nome Completo<br />
         <input type="text" name="name" class="feedback"><br />
@@ -134,7 +137,13 @@
         <input type="text" name="tel" class="feedback"><br />
         <br />
         <label for="review">Seu feedback aqui:</label><br />
-        <textarea id="review" name="feedback" class="feedback" rows="8" cols="50"></textarea>
+        <textarea id="review" name="feedback" class="feedback" rows="8" cols="50"></textarea><br />
+        <button id="submit" onclick="feedback()">Enviar</button>
+
+        <script>
+            const btnFeedback = document.getElementById("submit");
+            btnFeedback.addEventListener("clcik", thxForFb());
+        </script>
 
     </div>
 </body>
