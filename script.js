@@ -22,17 +22,15 @@ function feedback() {
 
     window.location.href = 'intranet/avaliacoes.html?action=executeLocal';
 
-}
-
-function thxForFb() {
-
     var thx = document.getElementById("thx");
     if(thx === "block") {
         thx.style.display = "none"
     }
 
-    for(let i = 0; i < document.getElementsByClassName("feedback").length; i++) {
+    for(let i = 0; i < document.getElementsByClassName("thx").length; i++) {
 		
-		document.getElementsByClassName("feedback")[i].value = "";
+		document.getElementsByClassName("thx")[i].value = "";
+
+    }
 
 }

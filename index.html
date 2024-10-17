@@ -24,7 +24,7 @@
             <source src="assets/animacao_1.mp4" type="video/mp4">
         </video>
     </div>
-    <h3>Viage para fora do país!</h3><br />
+    <h3>Viaje para fora do país!</h3><br />
     <div>
         <label type="text">Partida</label><br />
         <input type="text" name="checkout">
@@ -123,7 +123,7 @@
     </table>
     </div>
     <div>
-        <h3 hidden id="thx">Obrigado! Seu feedback é muito importante para nós!</h3>
+        <h3 hidden id="thx" class="thx">Obrigado! Seu feedback é muito importante para nós!</h3>
     </div>
     <div>
         <h2>DEIXE SEU FEEDBACK!!!</h2>
@@ -139,11 +139,6 @@
         <label for="review">Seu feedback aqui:</label><br />
         <textarea id="review" name="feedback" class="feedback" rows="8" cols="50"></textarea><br />
         <button id="submit" onclick="feedback()">Enviar</button>
-
-        <script>
-            const btnFeedback = document.getElementById("submit");
-            btnFeedback.addEventListener("clcik", thxForFb());
-        </script>
 
     </div>
 </body>
