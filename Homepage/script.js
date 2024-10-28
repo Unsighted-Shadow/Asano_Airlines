@@ -15,21 +15,17 @@ function feedback() {
         tel: tel,
         feedback: feedback
     };
+    var feedbacks = [];
+    feedbacks.push(JSON.stringify(feedbackData));
+    localStorage.setItem('feedbackData', feedbacks);
 
-    localStorage.setItem('feedbackData', JSON.stringify(feedbackData));
-
-    window.location.href = 'intranet/avaliacoes.html';
-
-    window.location.href = 'intranet/avaliacoes.html?action=executeLocal';
-
-    var thx = document.getElementById("thx");
-    if(thx === "block") {
-        thx.style.display = "none"
-    }
-
-    for(let i = 0; i < document.getElementsByClassName("thx").length; i++) {
+    var tks = document.getElementById("thx");
+    tks.removeAttribute("hidden");
+    
+    
+    for(let i = 0; i < document.getElementsByClassName("feedback").length; i++) {
 		
-		document.getElementsByClassName("thx")[i].value = "";
+		document.getElementsByClassName("feedback")[i].value = "";
 
     }
 

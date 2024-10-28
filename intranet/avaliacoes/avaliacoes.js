@@ -1,18 +1,13 @@
-function feedback() {
-    
-    console.log('Initialized');
-
-}
-
-window.onload = function() {
+function showFeedBack() {
 
  var feedbackData = JSON.parse(localStorage.getItem('feedbackData'));
+ console.log(feedbackData);
 
  if(feedbackData) {
 
     var table = document.getElementById("feedbackTable").getElementsByTagName("tbody")[0];
     var newRow = table.insertRow();
-
+    
     newRow.insertCell(0).innerHTML = feedbackData.id;
     newRow.insertCell(1).innerHTML = feedbackData.name;
     newRow.insertCell(2).innerHTML = feedbackData.email;
@@ -22,15 +17,6 @@ window.onload = function() {
     localStorage.removeItem('feedbackData');
     
  }
-
-    var params = new URLSearchParams(window.location.search);
-    var action = params.get('action');
-
-    if(action === 'executeLocal') {
-
-        feedback();
-
-    }
 };
 
 function hideShow() {
@@ -50,3 +36,4 @@ function hideShow() {
 
     }
 }
+
