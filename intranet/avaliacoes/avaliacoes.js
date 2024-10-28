@@ -8,14 +8,17 @@ function showFeedBack() {
     var table = document.getElementById("feedbackTable").getElementsByTagName("tbody")[0];
     var newRow = table.insertRow();
     
-    newRow.insertCell(0).innerHTML = feedbackData.id;
-    newRow.insertCell(1).innerHTML = feedbackData.name;
-    newRow.insertCell(2).innerHTML = feedbackData.email;
-    newRow.insertCell(3).innerHTML = feedbackData.tel;
-    newRow.insertCell(4).innerHTML = feedbackData.feedback;
+    for(i = 0; i <= 5; i++) {
 
-    localStorage.removeItem('feedbackData');
+        newRow.insertCell(0).innerHTML = feedbackData.id;
+        newRow.insertCell(1).innerHTML = feedbackData.name;
+        newRow.insertCell(2).innerHTML = feedbackData.email;
+        newRow.insertCell(3).innerHTML = feedbackData.tel;
+        newRow.insertCell(4).innerHTML = feedbackData.feedback;
+
+        localStorage.removeItem('feedbackData');
     
+    }
  }
 };
 
