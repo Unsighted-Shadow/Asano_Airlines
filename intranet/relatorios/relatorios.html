@@ -20,7 +20,7 @@
     <input type="text" name="search"><br />
     <button id="search" onclick="searchFile()">Pesquisar</button>
     <br /><br />
-    Inserir Relatório
+    <label id="insert">Inserir Relatório</label>
     <br />
     <select name="type">
         <option>Selecione--</option>
@@ -33,13 +33,13 @@
         <option>Manutencao</option>
     </select>
     <br />
-    Data<br>
+    <label id="date">Data</label><br>
     <input class="date" type="date" name="date">
     <br />
-    Inscrição<br>
+    <label id="type">Inscrição</label><br>
     <input type="text" name="name">
     <br />
-    Relatório<br>
+    <label id="file">Relatório</label><br>
     <input type="url" name="url"><br />
     <button id="file" onclick="addElement()">Adicionar Relatório</button>
     <br /><br />
@@ -53,6 +53,6 @@
     </table>
 </body>
 <footer>
-    © All rights reserved.
+    <label id="copyright">© All rights reserved.</label>
 </footer>
 </html>

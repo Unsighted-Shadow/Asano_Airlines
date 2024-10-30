@@ -12,11 +12,11 @@
 </header>
 <body>
   <forms>
-    Nome Completo:<br />
+    <label id="name" for="name">Nome Completo:</label><br />
     <input type="text" name="nome" class="resume"><br />
-    Idade:<br />
+    <label id="age" for="age">Idade:</label><br />
     <input type="number" name="age" class="resume"><br />
-    Sexo:<br />
+    <label id="gender" for="gender">Sexo:</label><br />
     <select name="gender" class="resume">
         <option>Selecione--</option>
         <option>Feminino</option>
@@ -24,7 +24,7 @@
         <option>Prefiro não responder</option>
     </select>
     <br />
-    Gênero:<br />
+    <label id="gender_identity" for="gender_identity">Gênero:</label><br />
     <select name="gender_identity" class="resume">
         <option>Selecione--</option>
         <option>Mulher cis</option>
@@ -34,14 +34,14 @@
         <option>Não-Binário</option>
     </select>
     <br />
-    Faz parte da comunidade LGBTQ+?<br />
+    <label id="islgbtq" for="islgbtq">Faz parte da comunidade LGBTQ+?</label><br />
     <select name="lgbtq" class="resume">
         <option>Selecione--</option>
         <option>Sim</option>
         <option>Não</option>
     </select>
     <br />
-    Etnia<br />
+    <label id="race" for="race">Etnia</label><br />
     <select name="etnia" class="resume">
         <option>Selecione--</option>
         <option>Branca</option>
@@ -51,7 +51,7 @@
         <option>Preta</option>
     </select>
     <br />
-    Escolaridade: <br />
+    <label id="study" for="study">Escolaridade:</label><br />
     <select name="study" class="resume">
         <option>Selecione--</option>
         <option>Ensino fundamental incompleto</option>
@@ -64,9 +64,9 @@
         <option>Pós-Graduação</option>
     </select> 
     <br />
-    Qual curso está cursando?<br />
+    <label id="course" for="course">Qual curso está cursando?</label><br />
     <input type="text" name="course" class="resume"><br />
-    Turno do curso:<br />
+    <label id="shift" for="shift">Turno do curso:</label><br />
     <select name="shift" class="resume">
         <option>Selecione--</option>
         <option>Não estou cursando</option>
@@ -76,19 +76,19 @@
         <option>Integral</option>
     </select>
     <br />
-    Previsão de término do curso:<br />
+    <label id="date" for="date">Previsão de término do curso:</label><br />
     <input type="date" name="date" class="resume"><br />
-    E-Mail: <br />
+    <label id="email" for="email">E-Mail:</label><br />
     <input type="email" name="email" class="resume"><br />
-    Telefone para contato:<br />
+    <label id="tel" for="tel">Telefone para contato:</label><br />
     <input type="number" name="tel" class="resume"><br />
-    WhatsApp:<br />
+    <label id="wpp" for="wpp">WhatsApp:</label><br />
     <input type="number" name="wpp" class="resume"><br />
-    Telefone para recado:<br />
+    <label id="voicemail" for="voicemail">Telefone para recado:</label><br />
     <input type="number" name="telm" class="resume"><br />
-    Nome para recado:<br />
+    <label id="nameForVoicemail" for="nameForVoicemail">Nome para recado:</label><br />
     <input type="text" name="message" class="resume"><br />
-    Envie seu currículo:<br />
+    <label id="submitCV" for="submitCV">Envie seu currículo:</label><br />
     <input type="file" name="cv" class="resume"><br />
     <button id="submit_form" onclick="workResume()">Enviar Formulário</button>
   </forms>  
@@ -97,29 +97,28 @@
 <footer>
     <div>
         <a href="../client/sac.html">Fale conosco</a><br />
-        airlines@asanoairlines.com<br />
-        +55 (11) 6289-5278<br />
+        <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+        <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
         <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
     </div>
     <div>
         By: Anna Carolina Soeiro Neves (HTML/JS)<br />
-        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting/JS)<br />
-        By: Júlia Praisler Marques (Design/Marketing Digital/JS)<br />
+        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting<br />
+        By: Júlia Praisler Marques (Design/Marketing Digital)<br />
     </div>
     <div>
-        By: Leandro Sobral Silveira (CSS/JS)<br />
-        By: Lucas Santos da Paz (HTML/JS)<br />
-        Contribution: Isaac Hanã Moretão Alves de Souza (JS)<br />
+        By: Leandro Sobral Silveira (CSS)<br />
+        By: Lucas Santos da Paz (HTML)<br />
     </div>
     <div>
         <img class="social" src="../assets/instagram.png">
-        @Asano_Airlines<br />
+        <label id="instagram">@Asano_Airlines</label><br />
         <img class="social" src="../assets/facebook.png">
-        @Asano_Airlines<br />
+        <label id="facebook">@Asano_Airlines</label><br />
         <img class="social" src="../assets/linkedin.png">
-        in/asano-airlines
+        <label id="linkedin">in/asano-airlines</label>
     </div>
     <br />
-    © All rights reserved.
+    <label id="copyright">© All rights reserved.</label>
 </footer>
 </html>
