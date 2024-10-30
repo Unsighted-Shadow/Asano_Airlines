@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asano Airlines</title>
+</head>
+<header>
+    <img src="../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/>
+    <a href="../Homepage/index.html">Home</a>
+    <a href="../intranet/signin_up/">Sign-in/up</a>
+</header>
+<body>
+  <forms>
+    Nome Completo:<br />
+    <input type="text" name="nome" class="resume"><br />
+    Idade:<br />
+    <input type="number" name="age" class="resume"><br />
+    Sexo:<br />
+    <select name="gender" class="resume">
+        <option>Selecione--</option>
+        <option>Feminino</option>
+        <option>Masculino</option>
+        <option>Prefiro não responder</option>
+    </select>
+    <br />
+    Gênero:<br />
+    <select name="gender_identity" class="resume">
+        <option>Selecione--</option>
+        <option>Mulher cis</option>
+        <option>Homem cis</option>
+        <option>Mulher Trans</option>
+        <option>Homem Trans</option>
+        <option>Não-Binário</option>
+    </select>
+    <br />
+    Faz parte da comunidade LGBTQ+?<br />
+    <select name="lgbtq" class="resume">
+        <option>Selecione--</option>
+        <option>Sim</option>
+        <option>Não</option>
+    </select>
+    <br />
+    Etnia<br />
+    <select name="etnia" class="resume">
+        <option>Selecione--</option>
+        <option>Branca</option>
+        <option>Amarela</option>
+        <option>Indígena</option>
+        <option>Parda</option>
+        <option>Preta</option>
+    </select>
+    <br />
+    Escolaridade: <br />
+    <select name="study" class="resume">
+        <option>Selecione--</option>
+        <option>Ensino fundamental incompleto</option>
+        <option>Ensino fundamental completo</option>
+        <option>Ensnino médio incompleto</option>
+        <option>Ensino médio completo</option>
+        <option>Ensino superior cursando</option>
+        <option>Ensino superior trancado</option>
+        <option>Ensino superior completo</option>
+        <option>Pós-Graduação</option>
+    </select> 
+    <br />
+    Qual curso está cursando?<br />
+    <input type="text" name="course" class="resume"><br />
+    Turno do curso:<br />
+    <select name="shift" class="resume">
+        <option>Selecione--</option>
+        <option>Não estou cursando</option>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+        <option>Integral</option>
+    </select>
+    <br />
+    Previsão de término do curso:<br />
+    <input type="date" name="date" class="resume"><br />
+    E-Mail: <br />
+    <input type="email" name="email" class="resume"><br />
+    Telefone para contato:<br />
+    <input type="number" name="tel" class="resume"><br />
+    WhatsApp:<br />
+    <input type="number" name="wpp" class="resume"><br />
+    Telefone para recado:<br />
+    <input type="number" name="telm" class="resume"><br />
+    Nome para recado:<br />
+    <input type="text" name="message" class="resume"><br />
+    Envie seu currículo:<br />
+    <input type="file" name="cv" class="resume"><br />
+    <button id="submit_form" onclick="workResume()">Enviar Formulário</button>
+  </forms>  
+  <script src="trabalhe_conosco.js"></script>
+</body>
+<footer>
+    <div>
+        <a href="../client/sac.html">Fale conosco</a><br />
+        airlines@asanoairlines.com<br />
+        +55 (11) 6289-5278<br />
+        <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+    </div>
+    <div>
+        By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting/JS)<br />
+        By: Júlia Praisler Marques (Design/Marketing Digital/JS)<br />
+    </div>
+    <div>
+        By: Leandro Sobral Silveira (CSS/JS)<br />
+        By: Lucas Santos da Paz (HTML/JS)<br />
+        Contribution: Isaac Hanã Moretão Alves de Souza (JS)<br />
+    </div>
+    <div>
+        <img class="social" src="../assets/instagram.png">
+        @Asano_Airlines<br />
+        <img class="social" src="../assets/facebook.png">
+        @Asano_Airlines<br />
+        <img class="social" src="../assets/linkedin.png">
+        in/asano-airlines
+    </div>
+    <br />
+    © All rights reserved.
+</footer>
+</html>

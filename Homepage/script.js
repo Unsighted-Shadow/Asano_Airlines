@@ -8,17 +8,25 @@ function feedback() {
 
     console.log(`id: ${id} \nNome: ${name} \nEmail: ${email} \nTel: ${tel} \nFeedback: ${feedback}`);
 
-    var feedbackData = {
+    var feedback = {
         id: id,
         name: name,
         email: email,
         tel: tel,
         feedback: feedback
     };
-    var feedbacks = [];
-    feedbacks.push(JSON.stringify(feedbackData));
-    localStorage.setItem('feedbackData', feedbacks);
-
+    var feedbackData = JSON.parse(localStorage.getItem("feedbackData"));
+    
+    if (!feedbackData) {
+        var feedbackData = {
+            feedbacks: []
+        };
+    }
+    
+    feedbackData.feedbacks.push(feedback);
+    
+    localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
+    
     var tks = document.getElementById("thx");
     tks.removeAttribute("hidden");
     
@@ -30,3 +38,4 @@ function feedback() {
     }
 
 }
+

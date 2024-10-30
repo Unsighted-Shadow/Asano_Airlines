@@ -9,8 +9,7 @@ function addElement() {
     var row = `<tr>
                     <td>${type}</td>
                     <td>${date}</td>
-                    <td>${name}</td>
-                    <td>${file}</td>
+                    <td><a href="${file}">${name}</a></td>
                     <td hidden>${id}</td>
                 </tr>`;
 
