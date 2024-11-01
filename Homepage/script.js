@@ -8,7 +8,7 @@ function feedback() {
 
     console.log(`id: ${id} \nNome: ${name} \nEmail: ${email} \nTel: ${tel} \nFeedback: ${feedback}`);
 
-    var feedback = {
+    var opinions = {
         id: id,
         name: name,
         email: email,
@@ -23,7 +23,7 @@ function feedback() {
         };
     }
     
-    feedbackData.feedbacks.push(feedback);
+    feedbackData.feedbacks.push(opinions);
     
     localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
     

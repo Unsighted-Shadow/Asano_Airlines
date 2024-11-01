@@ -1,4 +1,4 @@
-function login() {
+function user_login() {
 
     var users = JSON.parse(localStorage.getItem("signups"));
     console.log(users);
@@ -11,7 +11,9 @@ function login() {
         var pass_crypto = CryptoJS.SHA1(password).toString(CryptoJS.enc.Base64);
         if (users.signup[index].password === pass_crypto) {
             window.open("../intranet_homepages/cliente.html");
+            console.log(users.signup[index].password, pass_crypto)
         }
     }
+
 
 }

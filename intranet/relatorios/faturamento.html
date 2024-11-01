@@ -6,6 +6,25 @@
     <title>Faturamento Asano Airlines</title>
 </head>
 <body>
-    
+    <main>
+        <form onsubmit="profits()">
+            <fieldset>
+                <label id="date_form">Data:</label>
+                <input id="date" type="date" name="date">
+                <label id="plane">Código da Viagem</label>
+                <input id="planeID" type="text" name="planeID">
+                <label id="from_place">Origem</label>
+                <input id="from" type="text" name="from">
+                <label id="to_place">Destino</label>
+                <input id="to" type="text" name="to">
+            </fieldset>
+            <fieldset>
+                <label id="employee_type">Funcionário</label>
+                <input id="employee" type="text" name="employee">
+                <label id="salary_each">Salário</label>
+                <input id="salary" type="number" name="salary">
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
