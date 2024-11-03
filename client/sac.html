@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
     <link rel="stylesheet" href="sac.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 </head>
-<header>
-    <img src="../assets/asano_airlines_logo.png">
-    <a href="../Homepage/index.html"></a>
-</header>
 <body>
+    <header>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="/assets/asano_airlines_logo.png" alt="Logo asano airlines"></a>
+            <nav class="nav-links">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <a href="../Homepage/index.html">Menu</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <form class="formulario_ajuda" onsubmit="customer_service()">
             <label id="name">Nome completo:</label><br />
@@ -37,37 +46,46 @@
     <script src="sac.js"></script>
 
     <footer id="footer">
-        <div>
-            <a href="../client/sac.html">Fale conosco</a><br />
-            <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
-            <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
-            <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+        <div class="footer_space">
+            <div>
+                <a href="../client/sac.html">Fale conosco</a><br />
+                <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+                <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+                <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+            </div>
+    
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+    
+            <div>
+                By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+                By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+            </div> 
+
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+
+            <div>
+                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+                By: Leandro Sobral Silveira (CSS)<br />
+                By: Lucas Santos da Paz (HTML)<br />
+            </div>
+    
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+    
+            <div>
+                <img class="social" src="../assets/instagram.png">
+                <label id="instagram">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/facebook.png">
+                <label id="facebook">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/linkedin.png">
+                <label id="linkedin">in/asano-airlines</label>
+            </div>
         </div>
-    
-        <!-- Linha vertical -->
-        <hr class="vertical-line">
-    
-        <div class="membros">
-            By: Anna Carolina Soeiro Neves (HTML/JS)<br />
-            By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
-            By: Júlia Praisler Marques (Design/Marketing Digital)<br />
-            By: Leandro Sobral Silveira (CSS)<br />
-            By: Lucas Santos da Paz (HTML)<br />
-        </div>
-    
-        <!-- Linha vertical -->
-        <hr class="vertical-line">
-    
-        <div>
-            <img class="social" src="../assets/instagram.png">
-            <label id="instagram">@Asano_Airlines</label><br />
-            <img class="social" src="../assets/facebook.png">
-            <label id="facebook">@Asano_Airlines</label><br />
-            <img class="social" src="../assets/linkedin.png">
-            <label id="linkedin">in/asano-airlines</label>
-        </div>
-        <br />
-        <label id="copyright">© All rights reserved.</label>
+            <br />
+            <label id="copyright">© All rights reserved.</label>
+        
     </footer>
 
 </body>
