@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="pagamento.css">
 </head>
 <header>
+    <img src="../assets/asano_airlines_logo.png">
     <a href="emicao_de_passagens.html">Passagens</a>
     <a href="../intranet/signin_up/intranet_login.html">Login</a>
     <a href="../Homepage/index.html">Home</a>
@@ -16,7 +17,9 @@
         <forms onsubmit="pagto()">
             <h4>Dados do pagamento:</h4><br />
             <label for="method">Escolha seu método de pagamento</label><br />
-            <button id="card" onclick="payment_card()">Cartão</button>
+            <div id="credit">
+                <button id="card" onclick="payment_card()">Cartão</button>
+            </div>
             <button id="boleto" onclick="payment_boleto()">Boleto</button>
             <button id="pix" onclick="payment_pix()">PIX</button><br />
             <input id="terms" type="checkbox">Aceito os termos de uso.<br />
