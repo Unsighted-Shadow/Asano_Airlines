@@ -8,102 +8,128 @@ html, body {
     flex-direction: column; /* Configura o Flexbox para a coluna */
 }
 
-/* Gradiente de fundo animado para o body */
-body {
-    background: linear-gradient(124deg, #6b8bb2, #597ba1, #486a8f, #365a7e, #24496c);
-    background-size: 1000% 1000%;
-    animation: Animation 30s ease infinite;
-}
-
 main {
     flex: 1; /* Ocupa o espaço restante, empurrando o footer para baixo */
 }
-@keyframes Animation {
-    0% { background-position: 0% 19%; }
-    50% { background-position: 100% 82%; }
-    100% { background-position: 0% 19%; }
+/*Começo header*/
+header {
+    background-color: #10004F;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
 }
+.menu {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+.logo {
+    width: 120px; /* Tamanho da logo */
+}
+.material-symbols-outlined {
+    color: white;
+    margin-top: -5px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #61B1E6; /* Cor de hover para links */
+    text-decoration: underline;
+}
+
 
 /*Começo Estilização Formulário*/
 .formulario_ajuda {
-    /* Tamanho, centralização, estilo, letra */
     width: 500px;
     padding: 8px;
+    padding-bottom: 50px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: -20px; /* Posiciona o formulário mais próximo do header */
     text-align: center;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.952);
     color: black;
-    /* Estilo letra */
     font-family: "Roboto", sans-serif;
-    /* Borda */
     border-radius: 8px;
-    /* Sombra */
-    -webkit-box-shadow: 4px 6px 29px -2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 4px 6px 29px -2px rgba(0,0,0,0.3);
     box-shadow: 4px 6px 29px -2px rgba(0,0,0,0.3);
-}
-
-.formulario_ajuda label {
-    display: block; /* Cada label em uma linha separada */
-    font-weight: bold;
-    text-align: left; /* Alinha o texto dos labels à esquerda */
 }
 
 .formulario_ajuda input,
 .formulario_ajuda select,
 .formulario_ajuda textarea {
-    width: 100%; /* Ajusta a largura dos inputs e textarea */
+    width: 90%;
     padding: 8px;
-    margin-bottom: 10px; /* Espaçamento entre os campos */
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding na largura total */
+    border-radius: 4px;
 }
 
-/*Editar Botão*/
 .formulario_ajuda button {
     width: 200px;
     padding: 10px;
     color: white;
-    background-color: #61B1E6; /*Cor padrão*/
+    background-color: #61B1E6;
     border: none;
-    cursor: pointer; /*Ponteiro do Mouse ao passar por cima*/
+    cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
 }
 .formulario_ajuda button:hover {
-    background-color: #619EE6; /* Cor de fundo ao passar o mouse */
+    background-color: #619EE6;
 }
-/*Formulario Fim*/
 
-
-/*Footer Começo*/
+/* Footer */
 footer {
-    position: relative; /* Fixa o rodapé na parte inferior */
-    left: 0;
-    bottom: -150px; /* Inicialmente fora da tela */
+    position: relative;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: #ECECEE;
+    color: #4D4D4D;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.footer_space {
     display: flex;
     justify-content: space-around;
-    /*Estilo letra*/
-    font-family: "Roboto", sans-serif;
+    width: 100%;
 }
-/*Footer imgs*/
+
 footer img {
-    width: 5%;
+    width: 4%;
 }
-footer #copyright {
-    margin-top: 90px;
+
+#copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
-/* Estilos para as linhas verticais no footer */
+
+/* Linha vertical no footer */
 .vertical-line {
-    border: none; /* Remove o estilo padrão */
-    border-left: 2px solid rgba(255, 255, 255, 0.3); /* Define uma linha vertical */
-    height: 100px; /* Altura da linha */
-    margin: 0 20px; /* Espaçamento em ambos os lados */
-    align-self: stretch; /* Estica para ocupar a altura completa do footer */
+    border: none;
+    border-left: 2px solid #4D4D4D;
+    height: 100px;
+    margin: 0 20px;
+    align-self: stretch;
 }
