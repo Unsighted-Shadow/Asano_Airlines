@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asano Airlines</title>
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<header>
+    <a href="emicao_de_passagens.html">Passagens</a>
+    <a href="../intranet/signin_up/intranet_login.html">Login</a>
+    <a href="../Homepage/index.html">Home</a>
+</header>
+<body>
+    <main>
+        <forms onsubmit="pagto()">
+            <h4>Dados do pagamento:</h4><br />
+            <label for="method">Escolha seu método de pagamento</label><br />
+            <button id="card" onclick="payment_card()">Cartão</button>
+            <button id="boleto" onclick="payment_boleto()">Boleto</button>
+            <button id="pix" onclick="payment_pix()">PIX</button><br />
+            <input id="terms" type="checkbox">Aceito os termos de uso.<br />
+            <button id="submit" type="submit">Proceder com o pagamento</button>
+        </forms>
+    </main>
+    
+</body>
+</html>
