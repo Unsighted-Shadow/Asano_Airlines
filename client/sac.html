@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
+    <link rel="stylesheet" href="sac.css">
 </head>
 <body>
     <main>
-        <form onsubmit="customer_service()">
+        <form class="formulario_ajuda" onsubmit="customer_service()">
             <label id="name">Nome completo:</label><br />
-            <input id="user_name" type="text" name="name"><br />
+            <input placeholder="Digite Aqui" id="user_name" type="text" name="name"><br />
             <label id="email">E-mail:</label><br />
-            <input id="user_mail" type="email" name="email"><br />
+            <input placeholder="Digite Aqui" id="user_mail" type="email" name="email"><br />
             <label id="phone">Telefone:</label><br />
-            <input id="tel" type="number" name="tel"><br />
+            <input placeholder="Digite Aqui" id="tel" type="number" name="tel"><br />
             <label id="occurence">Tipo de Formulário:</label><br />
             <select name="select">
                 <option>Selecione--</option>
@@ -25,37 +26,37 @@
                 <option>Reclamação</option>
             </select><br />
             <label id="text">Digite aqui em detalhes o que está acontecendo</label><br />
-            <textarea id="textarea" name="sac" rows="8" cols="50"></textarea><br />
+            <textarea placeholder="Digite Aqui" id="textarea" name="sac" rows="8" cols="50"></textarea><br />
             <button id="submit" type="submit">Enviar</button><br />
         </form>
     </main>
     <script src="sac.js"></script>
+
+    <footer id="footer">
+        <div>
+            <a href="../client/sac.html">Fale conosco</a><br />
+            <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+            <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+            <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+        </div>
+        <div class="membros">
+            By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+            By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+            By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+            By: Leandro Sobral Silveira (CSS)<br />
+            By: Lucas Santos da Paz (HTML)<br />
+        </div>
+        <div>
+            <img class="social" src="../assets/instagram.png">
+            <label id="instagram">@Asano_Airlines</label><br />
+            <img class="social" src="../assets/facebook.png">
+            <label id="facebook">@Asano_Airlines</label><br />
+            <img class="social" src="../assets/linkedin.png">
+            <label id="linkedin">in/asano-airlines</label>
+        </div>
+        <br />
+        <label id="copyright">© All rights reserved.</label>
+    </footer>
+
 </body>
-<footer>
-    <div>
-        <a href="../client/sac.html">Fale conosco</a><br />
-        <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
-        <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
-        <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
-    </div>
-    <div>
-        By: Anna Carolina Soeiro Neves (HTML/JS)<br />
-        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting<br />
-        By: Júlia Praisler Marques (Design/Marketing Digital)<br />
-    </div>
-    <div>
-        By: Leandro Sobral Silveira (CSS)<br />
-        By: Lucas Santos da Paz (HTML)<br />
-    </div>
-    <div>
-        <img class="social" src="../assets/instagram.png">
-        <label id="instagram">@Asano_Airlines</label><br />
-        <img class="social" src="../assets/facebook.png">
-        <label id="facebook">@Asano_Airlines</label><br />
-        <img class="social" src="../assets/linkedin.png">
-        <label id="linkedin">in/asano-airlines</label>
-    </div>
-    <br />
-    <label id="copyright">© All rights reserved.</label>
-</footer>
 </html>
