@@ -99,3 +99,11 @@ footer img {
 footer #copyright {
     margin-top: 90px;
 }
+/* Estilos para as linhas verticais no footer */
+.vertical-line {
+    border: none; /* Remove o estilo padrão */
+    border-left: 2px solid rgba(255, 255, 255, 0.3); /* Define uma linha vertical */
+    height: 100px; /* Altura da linha */
+    margin: 0 20px; /* Espaçamento em ambos os lados */
+    align-self: stretch; /* Estica para ocupar a altura completa do footer */
+}
