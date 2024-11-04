@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
+    <link rel="stylesheet" href="trabalhe_conosco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=home,login" rel="stylesheet" />
 </head>
-<header>
-    <img src="../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/>
-    <a href="../Homepage/index.html">Home</a>
-    <a href="../intranet/signin_up/">Sign-in/up</a>
-</header>
 <body>
-  <forms>
+
+    <header>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/></a>
+            <nav class="nav-links">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <a href="../Homepage/index.html">Home</a>
+                <span class="material-symbols-outlined">
+                    login
+                </span>
+                <a href="../intranet/signin_up/">Sign-in/up</a>
+            </nav>
+        </div>
+    </header>
+    
+  <forms class="formulario_ajuda">
+
     <label id="name" for="name">Nome Completo:</label><br />
     <input type="text" name="nome" class="resume"><br />
     <label id="age" for="age">Idade:</label><br />
@@ -93,32 +108,50 @@
     <button id="submit_form" onclick="workResume()">Enviar Formulário</button>
   </forms>  
   <script src="trabalhe_conosco.js"></script>
+
+    <footer>
+        <div class="footer_space">
+            <div>
+                <a href="../client/sac.html">Fale conosco</a><br />
+                <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+                <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+                <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+            </div>
+
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+
+            <div>
+                By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+                By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting<br />
+                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+            </div>
+
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+
+            <div>
+                By: Leandro Sobral Silveira (CSS)<br />
+                By: Lucas Santos da Paz (HTML)<br />
+            </div>
+
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+
+            <div>
+                <img class="social" src="../assets/instagram.png">
+                <label id="instagram">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/facebook.png">
+                <label id="facebook">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/linkedin.png">
+                <label id="linkedin">in/asano-airlines</label>
+            </div>
+            <br/>
+        </div>
+            <br>
+            <label id="copyright">© All rights reserved.</label>
+        
+    </footer>
 </body>
-<footer>
-    <div>
-        <a href="../client/sac.html">Fale conosco</a><br />
-        <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
-        <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
-        <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
-    </div>
-    <div>
-        By: Anna Carolina Soeiro Neves (HTML/JS)<br />
-        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting<br />
-        By: Júlia Praisler Marques (Design/Marketing Digital)<br />
-    </div>
-    <div>
-        By: Leandro Sobral Silveira (CSS)<br />
-        By: Lucas Santos da Paz (CSS)<br />
-    </div>
-    <div>
-        <img class="social" src="../assets/instagram.png">
-        <label id="instagram">@Asano_Airlines</label><br />
-        <img class="social" src="../assets/facebook.png">
-        <label id="facebook">@Asano_Airlines</label><br />
-        <img class="social" src="../assets/linkedin.png">
-        <label id="linkedin">in/asano-airlines</label>
-    </div>
-    <br />
-    <label id="copyright">© All rights reserved.</label>
-</footer>
+
 </html>
