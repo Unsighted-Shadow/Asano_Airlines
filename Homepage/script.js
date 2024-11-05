@@ -6,8 +6,6 @@ function feedback() {
     var tel = document.getElementsByName("tel")[0].value;
     var feedback = document.getElementsByName("feedback")[0].value;
 
-    console.log(`id: ${id} \nNome: ${name} \nEmail: ${email} \nTel: ${tel} \nFeedback: ${feedback}`);
-
     var opinions = {
         id: id,
         name: name,
@@ -39,3 +37,29 @@ function feedback() {
 
 }
 
+function popula_destinos_domesticos() {
+    var table_body = document.querySelector("#destinos_domesticos tbody");
+
+    destinos
+        .filter(destino => destino.pais_destino === 'Brasil')
+        .forEach(destino => {
+            var table_row = document.createElement('tr');
+            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="emissao_de_passagem.html?id=${destino.id}">Escolher esta!</a></td>`;
+            table_body.appendChild(table_row);
+        });
+}
+
+function popula_destinos_internacionais() {
+    var table_body = document.querySelector("#destinos_internacionais tbody");
+
+    destinos
+        .filter(destino => destino.pais_destino !== 'Brasil')
+        .forEach(destino => {
+            var table_row = document.createElement('tr');
+            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="emissao_de_passagem.html?id=${destino.id}">Escolher esta!</a></td>`;
+            table_body.appendChild(table_row);
+        });
+}
+
+popula_destinos_domesticos();
+popula_destinos_internacionais();

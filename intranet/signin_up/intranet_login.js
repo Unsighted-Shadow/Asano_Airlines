@@ -14,6 +14,14 @@ function user_login(event) {
     if (index !== -1) {
         var pass_crypto = CryptoJS.SHA1(password).toString(CryptoJS.enc.Base64);
         if (users.signup[index].password === pass_crypto) {
+            
+            var session_user = {
+                name: users.signup[index].name_user,
+                category
+            }
+
+            localStorage.setItem('session', JSON.stringify(session_user));
+
             switch (category) {
                 case "pax":
                     window.open("../intranet_homepages/cliente.html", "_self");
@@ -23,7 +31,8 @@ function user_login(event) {
                     window.open("../intranet_homepages/pagina_inicial.html", "_self");
                     break;
                 default:
-                    window.open("intranet_login.html", "_self")
+                    alert('Usuário ou Senha incorretos!');
+                    window.open("intranet_login.html", "_self");
             }
             
             
