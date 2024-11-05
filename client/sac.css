@@ -13,7 +13,9 @@ main {
 }
 /*Começo header*/
 header {
-    background-color: #10004F;
+    background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
