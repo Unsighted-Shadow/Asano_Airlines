@@ -99,3 +99,104 @@
 </body>
 </html>
  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asano Airlines</title>
+    <link rel="stylesheet" href="sac.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=home,login,public" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="/assets/asano_airlines_logo.png" alt="Logo asano airlines"></a>
+            <nav class="nav-links">
+                <span class="material-symbols-outlined">
+                    home<!--Icone home/menu-->
+                </span>
+                <a href="../Homepage/index.html">Menu</a>
+                <span class="material-symbols-outlined">
+                    login<!--Icone Login-->
+                </span>
+                <a href="../intranet/signin_up/">Sign-in/up</a>
+                <span class="material-symbols-outlined">
+                    public<!--Icone Intranet-->
+                    </span>
+                <a href="intranet.html">Intranet</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario_ajuda" onsubmit="customer_service()">
+            <label id="name">Nome completo:</label><br />
+            <input placeholder="Digite Aqui" id="user_name" type="text" name="name"><br />
+            <label id="email">E-mail:</label><br />
+            <input placeholder="Digite Aqui" id="user_mail" type="email" name="email"><br />
+            <label id="phone">Telefone:</label><br />
+            <input placeholder="Digite Aqui" id="tel" type="number" name="tel"><br />
+            <label id="occurence">Tipo de Formulário:</label><br />
+            <select name="select">
+                <option>Selecione--</option>
+                <option>Passagem</option>
+                <option>Bagagem</option>
+                <option>Extravio</option>
+                <option>Conexões</option>
+                <option>Reembolso</option>
+                <option>Reclamação</option>
+            </select><br />
+            <label id="text">Digite aqui em detalhes o que está acontecendo</label><br />
+            <textarea placeholder="Digite Aqui" id="textarea" name="sac" rows="8" cols="50"></textarea><br />
+            <button id="submit" type="submit">Enviar</button><br />
+        </form>
+    </main>
+    <script src="sac.js"></script>
+
+    <footer id="footer">
+       <div class="footer_space">
+            <div>
+                <a href="../client/sac.html">Fale conosco</a><br />
+                <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+                <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+                <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+            </div>
+    
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+    
+            <div>
+                By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+                By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+            </div> 
+
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+
+            <div>
+                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+                By: Leandro Sobral Silveira (CSS)<br />
+                By: Lucas Santos da Paz (CSS)<br />
+            </div>
+    
+            <!-- Linha vertical -->
+            <hr class="vertical-line">
+    
+            <div>
+                <img class="social" src="../assets/instagram.png">
+                <label id="instagram">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/facebook.png">
+                <label id="facebook">@Asano_Airlines</label><br />
+                <img class="social" src="../assets/linkedin.png">
+                <label id="linkedin">in/asano-airlines</label>
+            </div>
+        </div>
+            <br />
+            <label id="copyright">© All rights reserved.</label>
+        
+    </footer>
+
+</body>
+</html>
+ 
