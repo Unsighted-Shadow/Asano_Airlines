@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Asano Airlines</title>
+</head>
+<header>
+    <a href="../../Homepage/index.html">Home</a>
+    <a href="cadastro.html">Cadastre-se</a>
+    <h1>Bem-vindo ao ambiente interno!</h1>
+</header>
+<body>
+    <form onsubmit="user_login(event)">
+        <select id="category" name="category">
+            <option>Selecione--</option>
+            <option value="pax">Passageiro</option>
+            <option value="employee">Funcionário</option>
+            <option value="provider">Fornecedor</option>
+        </select>
+        <br /><br />
+        <label for="cpf">CPF:</label><br />
+        <input id="cpf" name="cpf" type="number"><br />
+        <label for="password">Senha:</label><br />
+        <input id="password" name="password" type="password"><br />
+        <button id="login" class="intranet" type="submit">Log-in</button>
+        <button id="signup" class="intranet"><a href="intranet/cadastro.html">Cadastrar-se</a></button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="intranet_login.js"></script>
+</body>
+<footer>
+    <div>
+        <a href="../client/sac.html">Fale conosco</a><br />
+        <label id="enterprise">airlines@asanoairlines.com</label><br />
+        <label id="ourtel">+55 (11) 6289-5278</label><br />
+        <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+    </div>
+    <div>
+        By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+        By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+        By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+    </div>
+    <div>
+        By: Leandro Sobral Silveira (CSS)<br />
+        By: Lucas Santos da Paz (CSS)<br />
+    </div>
+    <div>
+        <img class="social" src="../assets/instagram.png">
+        <label id="instagram">@Asano_Airlines</label><br />
+        <img class="social" src="../assets/facebook.png">
+        <label id="facebook">@Asano_Airlines</label><br />
+        <img class="social" src="../assets/linkedin.png">
+        <label id="linkedin">in/asano-airlines</label>
+    </div>
+    <br />
+    <label id="copyright">© All rights reserved.</label>
+</footer>
+</html>

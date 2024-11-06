@@ -1,0 +1,222 @@
+const destinos = [
+    {
+        "id": "c76a2912-1a85-4e7f-8c61-80c8c2b258e7",
+        "origem": "GRU",
+        "destino": "JFK",
+        "cidade_destino": "Nova York",
+        "pais_destino": "Estados Unidos",
+        "data_embarque": "2024-11-15",
+        "data_retorno": "2024-11-25",
+        "preco": 3200,
+        "voo_direto": true
+    },
+    {
+        "id": "a2a93b1a-d6d8-4c7b-9d3e-06330ab23dcf",
+        "origem": "GIG",
+        "destino": "CDG",
+        "cidade_destino": "Paris",
+        "pais_destino": "França",
+        "data_embarque": "2024-12-01",
+        "data_retorno": "2024-12-10",
+        "preco": 4500,
+        "voo_direto": false
+    },
+    {
+        "id": "7f8a9903-dfed-4ab9-a9ef-674d6f76c646",
+        "origem": "CGH",
+        "destino": "POA",
+        "cidade_destino": "Porto Alegre",
+        "pais_destino": "Brasil",
+        "data_embarque": "2024-11-20",
+        "data_retorno": "2024-11-22",
+        "preco": 500,
+        "voo_direto": true
+    },
+    {
+        "id": "3d57b729-0a26-40c9-896f-b1c8a7efbc2c",
+        "origem": "BSB",
+        "destino": "MIA",
+        "cidade_destino": "Miami",
+        "pais_destino": "Estados Unidos",
+        "data_embarque": "2024-11-25",
+        "data_retorno": "2024-12-05",
+        "preco": 3700,
+        "voo_direto": false
+    },
+    {
+        "id": "a3c4a281-eec3-482d-a05e-c3720c63e5de",
+        "origem": "SSA",
+        "destino": "EZE",
+        "cidade_destino": "Buenos Aires",
+        "pais_destino": "Argentina",
+        "data_embarque": "2024-12-15",
+        "data_retorno": "2024-12-22",
+        "preco": 1500,
+        "voo_direto": true
+    },
+    {
+        "id": "d846d845-87c2-4cd8-8b55-82f27c2f828d",
+        "origem": "GRU",
+        "destino": "LHR",
+        "cidade_destino": "Londres",
+        "pais_destino": "Reino Unido",
+        "data_embarque": "2025-01-10",
+        "data_retorno": "2025-01-20",
+        "preco": 4800,
+        "voo_direto": false
+    },
+    {
+        "id": "67e4b12a-7a12-42a1-b8d5-9e6afc667b82",
+        "origem": "CGH",
+        "destino": "SDU",
+        "cidade_destino": "Rio de Janeiro",
+        "pais_destino": "Brasil",
+        "data_embarque": "2024-12-05",
+        "data_retorno": "2024-12-07",
+        "preco": 400,
+        "voo_direto": true
+    },
+    {
+        "id": "a5c91527-1bc5-4a17-9d70-f71ab25203f1",
+        "origem": "GRU",
+        "destino": "YYZ",
+        "cidade_destino": "Toronto",
+        "pais_destino": "Canadá",
+        "data_embarque": "2024-11-28",
+        "data_retorno": "2024-12-08",
+        "preco": 3200,
+        "voo_direto": false
+    },
+    {
+        "id": "b4d9df68-52d2-4e39-9f8b-41e4d00731be",
+        "origem": "GIG",
+        "destino": "SCL",
+        "cidade_destino": "Santiago",
+        "pais_destino": "Chile",
+        "data_embarque": "2024-11-20",
+        "data_retorno": "2024-11-30",
+        "preco": 1600,
+        "voo_direto": true
+    },
+    {
+        "id": "e1b37f7b-ef8b-474b-8180-2d7c593b7cfa",
+        "origem": "BSB",
+        "destino": "MAD",
+        "cidade_destino": "Madri",
+        "pais_destino": "Espanha",
+        "data_embarque": "2025-02-01",
+        "data_retorno": "2025-02-12",
+        "preco": 4900,
+        "voo_direto": false
+    },
+    {
+        "id": "b7ef3893-c953-4b3b-8c0d-2e2c823a2e96",
+        "origem": "POA",
+        "destino": "GRU",
+        "cidade_destino": "São Paulo",
+        "pais_destino": "Brasil",
+        "data_embarque": "2024-11-17",
+        "data_retorno": "2024-11-19",
+        "preco": 600,
+        "voo_direto": true
+    },
+    {
+        "id": "9be3b950-2e7d-4df9-89e8-f0236a5b5f8d",
+        "origem": "GRU",
+        "destino": "FCO",
+        "cidade_destino": "Roma",
+        "pais_destino": "Itália",
+        "data_embarque": "2024-12-02",
+        "data_retorno": "2024-12-12",
+        "preco": 4300,
+        "voo_direto": true
+    },
+    {
+        "id": "c56b1499-15f2-41b8-a1b1-045b1d59bc6f",
+        "origem": "CGH",
+        "destino": "SSA",
+        "cidade_destino": "Salvador",
+        "pais_destino": "Brasil",
+        "data_embarque": "2024-11-23",
+        "data_retorno": "2024-11-30",
+        "preco": 700,
+        "voo_direto": true
+    },
+    {
+        "id": "b1ab3d34-e4be-4f3c-a8f6-2fd4e5cf84b4",
+        "origem": "GRU",
+        "destino": "LAX",
+        "cidade_destino": "Los Angeles",
+        "pais_destino": "Estados Unidos",
+        "data_embarque": "2024-12-14",
+        "data_retorno": "2024-12-24",
+        "preco": 4100,
+        "voo_direto": false
+    },
+    {
+        "id": "4fcf62b6-8cd4-4b02-b2f0-7b8c6e5e7d0b",
+        "origem": "GIG",
+        "destino": "BOG",
+        "cidade_destino": "Bogotá",
+        "pais_destino": "Colômbia",
+        "data_embarque": "2025-01-05",
+        "data_retorno": "2025-01-15",
+        "preco": 1900,
+        "voo_direto": true
+    },
+    {
+        "id": "be2bfcd9-0890-4e35-8ef6-1b8a6a6b658a",
+        "origem": "SSA",
+        "destino": "GRU",
+        "cidade_destino": "São Paulo",
+        "pais_destino": "Brasil",
+        "data_embarque": "2024-11-30",
+        "data_retorno": "2024-12-02",
+        "preco": 600,
+        "voo_direto": true
+    },
+    {
+        "id": "abf7380c-462b-4d74-86d1-bcc1ae1c8eb6",
+        "origem": "GRU",
+        "destino": "AMS",
+        "cidade_destino": "Amsterdã",
+        "pais_destino": "Países Baixos",
+        "data_embarque": "2025-01-12",
+        "data_retorno": "2025-01-20",
+        "preco": 4700,
+        "voo_direto": false
+    },
+    {
+        "id": "91f39825-6b63-4e71-9c93-646ce5b3744d",
+        "origem": "GIG",
+        "destino": "MEX",
+        "cidade_destino": "Cidade do México",
+        "pais_destino": "México",
+        "data_embarque": "2024-12-18",
+        "data_retorno": "2024-12-28",
+        "preco": 3500,
+        "voo_direto": false
+    },
+    {
+        "id": "5b0130d1-dfa2-4d09-b57d-173c41f96fc9",
+        "origem": "BSB",
+        "destino": "LIM",
+        "cidade_destino": "Lima",
+        "pais_destino": "Peru",
+        "data_embarque": "2024-12-10",
+        "data_retorno": "2024-12-20",
+        "preco": 2000,
+        "voo_direto": true
+    },
+    {
+        "id": "6c527639-fd9a-43a1-92f7-d268f6e79f04",
+        "origem": "GRU",
+        "destino": "JNB",
+        "cidade_destino": "Joanesburgo",
+        "pais_destino": "África do Sul",
+        "data_embarque": "2024-11-25",
+        "data_retorno": "2024-12-05",
+        "preco": 5000,
+        "voo_direto": true
+    }
+];
