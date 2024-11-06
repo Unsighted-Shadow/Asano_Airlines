@@ -44,10 +44,10 @@ function popula_destinos_domesticos() {
         .filter(destino => destino.pais_destino === 'Brasil')
         .forEach(destino => {
             var table_row = document.createElement('tr');
-            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="emissao_de_passagem.html?id=${destino.id}">Escolher esta!</a></td>`;
+            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="../client/emissao_de_passagens.html?id=${destino.id}">Escolher esta!</a></td>`;
             table_body.appendChild(table_row);
         });
-}
+} 
 
 function popula_destinos_internacionais() {
     var table_body = document.querySelector("#destinos_internacionais tbody");
@@ -56,7 +56,7 @@ function popula_destinos_internacionais() {
         .filter(destino => destino.pais_destino !== 'Brasil')
         .forEach(destino => {
             var table_row = document.createElement('tr');
-            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="emissao_de_passagem.html?id=${destino.id}">Escolher esta!</a></td>`;
+            table_row.innerHTML = `<td>${destino.origem}</td><td>✈</td><td>${destino.destino}</td><td>${destino.preco}</td><td><a href="../client/emissao_de_passagens.html?id=${destino.id}">Escolher esta!</a></td>`;
             table_body.appendChild(table_row);
         });
 }
