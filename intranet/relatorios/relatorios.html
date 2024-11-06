@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Asano Airlines</title>
+    <script src="relatorios.js"></script>
+    <link rel="stylesheet" href="relatorios.css">
+</head>
+<header>
+    <h1>RELATÓRIOS</h1>
+    <img src="../../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/>
+    <a href="../../index.html">Home</a>
+    <a href="../pagina_inicial.html">Intranet Homepage</a>
+    <a href="https://docs.google.com">Google Docs</a>
+    <a href="https://sheets.google.com">Google Sheets</a>
+    <a href="https://docs.google.com/forms">Google Forms</a>
+</header>
+<body>
+    <input type="text" name="search"><br />
+    <button id="search" onclick="searchFile()">Pesquisar</button>
+    <br /><br />
+    <label id="insert">Inserir Relatório</label>
+    <br />
+    <select name="type">
+        <option>Selecione--</option>
+        <option>Ocorrencia</option>
+        <option>Vendas</option>
+        <option>Funcionario</option>
+        <option>Feedback</option>
+        <option>Enquete</option>
+        <option>Fornecedor</option>
+        <option>Manutencao</option>
+    </select>
+    <br />
+    <label id="date">Data</label><br>
+    <input class="date" type="date" name="date">
+    <br />
+    <label id="type">Inscrição</label><br>
+    <input type="text" name="name">
+    <br />
+    <label id="file">Relatório</label><br>
+    <input type="url" name="url"><br />
+    <button id="file" onclick="addElement()">Adicionar Relatório</button>
+    <br /><br />
+    <table id="content">
+        <tr>
+            <th>Tipo</th>
+            <th>Data</th>
+            <th>Relatório</th>
+            <th hidden>id</th>
+        </tr>
+    </table>
+</body>
+<footer>
+    <label id="copyright">© All rights reserved.</label>
+</footer>
+</html>

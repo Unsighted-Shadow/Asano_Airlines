@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asano Airlines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=home,login,public" rel="stylesheet" />
+</head>
+<body>
+        <!--Começo Header-->
+    <header>
+        <div class="menu">
+            <a href="index.html"><img class="logo" src="../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/></a>
+                <nav class="nav-links">
+                    <span class="material-symbols-outlined">
+                        home<!--Icone home/menu-->
+                    </span>
+                    <a href="index.html">Home</a>
+                    
+                    <span class="material-symbols-outlined">
+                        login<!--Icone login-->
+                    </span>
+                    <a href="../intranet/signin_up/">Sign-in/up</a>
+
+                    <span class="material-symbols-outlined">
+                        public<!--Icone Intranet-->
+                        </span>
+                    <a href="intranet.html">Intranet</a>
+                </nav>
+        </div>
+
+    </header>
+        <!--Final Header-->
+
+    <br />
+    
+    <img class="marketing" src="../assets/dubai.jpg" alt="Uma imagem do palácio de dubai com a legenda em um fundo oval laranja 'Comece a viajar!'">
+    <img class="marketing" src="../assets/china.jpg" alt="Uma imagem de um templo chinês bem populado com a legenda em um fundo laranja 'Comece a viajar!'">
+    <img class="marketing" src="../assets/franca.jpg" alt="Uma imagem da torre einfel com a legenda num fundo oval laranja 'Comece a viajar!'">
+    <br />
+    <br />
+    <h1>Sua viagem começa aqui!</h1><br>
+    <div>
+        <video autoplay controls loop>
+            <source src="../assets/animacao_1.mp4" type="video/mp4">
+        </video>
+    <h3>Viaje para fora do país!</h3><br />
+    <div>
+    <table id="destinos_internacionais">
+        <thead>
+            <tr>
+                <td>Saída</td>
+                <td></td>
+                <td>Destino</td>
+                <td>Ida-Volta</td>
+                <td></td>
+            </tr>    
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    <h3>Viaje dentro do Brasil!</h3><br />
+    <div>
+    <table id="destinos_domesticos">
+        <thead>
+            <tr>
+                <td>Saída</td>
+                <td></td>
+                <td>Destino</td>
+                <td>Ida-Volta</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    
+    <!-- Linha Horizontal -->
+    <hr class="horizontal-line">
+
+    <br>
+
+        <h3 hidden id="thx" class="thx">Obrigado! Seu feedback é muito importante para nós!</h3>
+
+    <br>
+
+            <!--FEEDBACK-->
+        <div class="feedback">
+            <forms class="form_feedback">
+
+                <div class="logo_h2">
+                    <img class="logo_feedback" src="/assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines.">
+                    <h2>FEEDBACK!!!</h2>
+                </div>
+            
+                <label class="infos" id="name" for="name">Nome Completo:</label><br />
+                <input placeholder="Digite seu nome completo" type="text" name="name" class="feedback"><br />
+                <br />
+                <label class="infos" id="email" for="email">E-Mail:</label><br />
+                <input placeholder="Digite seu Email" type="text" name="email" class="feedback"><br />
+                <br />
+                <label class="infos" id="tel" for="tel">Telefone:</label><br />
+                <input placeholder="Digite seu Telefone" type="text" name="tel" class="feedback"><br />
+                <br />
+                <label class="infos" for="review">Seu feedback aqui:</label><br />
+                <textarea placeholder="Digite seu Feedback" id="review" name="feedback" class="feedback" rows="8" cols="50"></textarea><br />
+
+                <button class="feed_enviar" id="submit" onclick="feedback()">Enviar</button>
+
+            </forms>
+        </div>
+
+        <!--Começo Footer-->
+<footer>
+    <div class="footer_space">
+        <div>
+            <a href="../client/sac.html">Fale conosco</a><br />
+            <label id="enterprise">airlines@asanoairlines.com</label><br />
+            <label id="ourtel">+55 (11) 6289-5278</label><br />
+            <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+        </div>
+
+        <!-- Linha vertical -->
+        <hr class="vertical-line">
+
+        <div>
+            By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+            By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+            By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+        </div>
+
+        <!-- Linha vertical -->
+        <hr class="vertical-line">
+
+        <div>
+            By: Leandro Sobral Silveira (CSS)<br />
+            By: Lucas Santos da Paz (CSS)<br />
+        </div>
+
+        <!-- Linha vertical -->
+        <hr class="vertical-line">
+
+        <div>
+            <img class="social" src="../assets/instagram.png">
+            <label id="instagram">@Asano_Airlines</label><br />
+            <img class="social" src="../assets/facebook.png">
+            <label id="facebook">@Asano_Airlines</label><br />
+            <img class="social" src="../assets/linkedin.png">
+            <label id="linkedin">in/asano-airlines</label>
+        </div>
+    </div>
+    <br />
+    <label id="copyright">© All rights reserved.</label>
+</footer>
+        <!--Final Footer-->
+
+</body>
+
+<script src="destinos.js"></script>
+<script src="script.js"></script>
+</html>

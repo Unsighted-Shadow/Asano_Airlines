@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asano Airlines</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <style>
+        #credit, #paper, #instant {
+            display: none;
+        }
+    </style>
+</head>
+<header>
+    <img src="../assets/asano_airlines_logo.png">
+    <a href="emicao_de_passagens.html">Passagens</a>
+    <a href="../intranet/signin_up/intranet_login.html">Login</a>
+    <a href="../Homepage/index.html">Home</a>
+</header>
+<body>
+    <main>
+        <form onsubmit="pagto()">
+            <h4>Dados do pagamento:</h4><br />
+            <fieldset>
+                <legend>Método de pagamento</legend>
+                <input type="radio" id="card" name="payment_method" value="card" onchange="payment('card')">
+                <label for="card">Cartão</label>
+                <input type="radio" id="boleto" name="payment_method" value="boleto" onchange="payment('boleto')">
+                <label for="boleto">Boleto</label>
+                <input type="radio" id="pix" name="payment_method" value="pix" onchange="payment('pix')">
+                <label for="pix">PIX</label>
+            </fieldset>
+            <div id="credit"><h2>div do cartão</h2></div>
+            <div id="paper"><h2>div do boleto</h2></div>
+            <div id="instant"><h2>div do pix</h2></div>
+            <input id="terms" type="checkbox">Aceito os termos de uso.<br />
+            <button id="submit" type="submit">Proceder com o pagamento</button>
+        </form>
+    </main>
+    <script src="pagamento.js"></script>
+</body>
+</html>
