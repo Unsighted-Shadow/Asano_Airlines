@@ -7,24 +7,16 @@
 </head>
 <body>
     <main>
-        <div>
-            <h4>Economy class</h4>
-            <input type="date" id="date" name="date">
-            <span id="flight_time"></span>
-            <span id="pax_seat"></span>
-        </div>
-        <div>
-            <span id="origin"></span>
-            <span id="destination"></span><br />
-            <input type="text" id="name_pax" name="name_pax">
-        </div>
-        <div>
-            <input type="text" id="name_pax_register" name="name_pax">
-            <span id="pax_seat_register"></span>
-            <p>Economy</p>
-            <br /><br />
-            <span id="destination_register"></span>
-        </div>
+        <form onsubmit="sendToPay()">
+            <legend>Insira seus dados para a emissão da passagem:</legend>
+            <label for="pax">Nome completo</label><br />
+            <input type="text" id="pax" name="pax"><br />
+            <label for="cpf">CPF</label><br />
+            <input type="number" id="cpf" name="cpf"><br />
+            <label for="birthday">Data de nascimento</label><br />
+            <input type="date" id="birthday" name="birthday"><br />
+            <button id="submit" type="submit">Enviar</button><br />
+        </form>
     </main>
     <footer>
         <div class="footer_space">
