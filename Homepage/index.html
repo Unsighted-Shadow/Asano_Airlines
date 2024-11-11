@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=home,login,public" rel="stylesheet" />
 </head>
 <body>
@@ -36,10 +37,32 @@
         <!--Final Header-->
 
     <br />
-    
-    <img class="marketing" src="../assets/dubai.jpg" alt="Uma imagem do palácio de dubai com a legenda em um fundo oval laranja 'Comece a viajar!'">
-    <img class="marketing" src="../assets/china.jpg" alt="Uma imagem de um templo chinês bem populado com a legenda em um fundo laranja 'Comece a viajar!'">
-    <img class="marketing" src="../assets/franca.jpg" alt="Uma imagem da torre einfel com a legenda num fundo oval laranja 'Comece a viajar!'">
+    <div id="carousel" class="carousel_slide" dataride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/dubai.jpg" class="d-block w-100" alt="Uma imagem do palácio de dubai com a legenda em um fundo oval laranja 'Comece a viajar!'">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/china.jpg" class="d-block w-100" alt="Uma imagem de um templo chinês bem populado com a legenda em um fundo laranja 'Comece a viajar!'">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/franca.jpg" class="d-block w-100" alt="Uma imagem da torre einfel com a legenda num fundo oval laranja 'Comece a viajar!'">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
     <br />
     <br />
     <h1>Sua viagem começa aqui!</h1><br>
@@ -159,8 +182,11 @@
 </footer>
         <!--Final Footer-->
 
+        
 </body>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="destinos.js"></script>
 <script src="script.js"></script>
 </html>

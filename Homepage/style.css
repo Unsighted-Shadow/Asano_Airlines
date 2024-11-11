@@ -11,10 +11,6 @@ html, body {
 main {
     flex: 1; /* Ocupa o espaço restante, empurrando o footer para baixo */
 }
-/*Imagens tamanho*/
-.marketing {
-    width: 30%;
-}
 
 /*Header Começo*/
 header {
