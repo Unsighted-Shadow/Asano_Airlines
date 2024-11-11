@@ -30,9 +30,40 @@
                 <input type="radio" id="pix" name="payment_method" value="pix" onchange="payment('pix')">
                 <label for="pix">PIX</label>
             </fieldset>
-            <div id="credit"><h2>div do cartão</h2></div>
-            <div id="paper"><h2>div do boleto</h2></div>
-            <div id="instant"><h2>div do pix</h2></div>
+            <div id="credit">
+                <form>
+                    <label for="number">Número do cartão</label><br />
+                    <input id="number" type="number" name="number"><br />
+                    <label for="validate">Validade</label><br />
+                    <input id="date" type="date" name="date"><br />
+                    <label for="cvv">CVV</label><br />
+                    <input id="cvv" type="number" name="cvv"><br />
+                    <label for="name">Nome completo</label><br />
+                    <input id="name" type="text" name="name"><br />
+                    <label for="cpf">CPF</label><br />
+                    <input id="cpf" type="number" name="cpf">
+                </form>
+            </div>
+            <div id="paper">
+                <h3>Pague seu boleto</h3>
+                <label for="total">Total da passagem <span id="ticket"></span></label>
+                <br />
+                <br />
+                <label for="code">34191.79001  23456.789012  34567.890123  4  12340000010000</label><br />
+                <button>Copiar código do boleto</button>
+                <!--Esse botão não é funcional.-->
+                <br />
+                <img src="../assets/codigodebarras.png">
+            </div>
+            <div id="instant">
+                <h3>Escaneie o QR-Code ou copie o código</h3>
+                <br />
+                <img src="../assets/QR_Code.png">
+                <br />
+                <label for="pix">00020126330014BR.GOV.BCB.PIX0114empresa@asanoairlines.com5204000053039865405100.005802BR5907ASANO6009SAO PAULO62070503***6304ABCD</label>
+                <button>Copiar código PIX</button>
+                <!--Esse botão não é funcional.-->
+            </div>
             <input id="terms" type="checkbox">Aceito os termos de uso.<br />
             <button id="submit" type="submit">Proceder com o pagamento</button>
         </form>
