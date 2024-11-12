@@ -5,39 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
     <link rel="stylesheet" href="pagamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=handshake,home,login,public" rel="stylesheet" />
     <style>
         #credit, #paper, #instant {
             display: none;
         }
     </style>
 </head>
-<header>
-    <img src="../assets/asano_airlines_logo.png">
-    <a href="emicao_de_passagens.html">Passagens</a>
-    <a href="../intranet/signin_up/intranet_login.html">Login</a>
-    <a href="../Homepage/index.html">Home</a>
-</header>
+
 <body>
+
+        <!--Começo Header-->
     <header>
-        <img src="../assets/asano_airlines_logo.png">
-        <a href="../Homepage/index.html">Home</a>
-        <a href="../intranet/signin_up/intranet_login.html">Sign-in</a>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="/assets/asano_airlines_logo.png" alt="Logo asano airlines"></a>
+            <nav class="nav-links">
+                <span class="material-symbols-outlined">
+                    home<!--Icone home/menu-->
+                </span>
+                <a href="../Homepage/index.html">Menu</a>
+                
+                <span class="material-symbols-outlined">
+                    login<!--Icone Login-->
+                </span>
+                <a href="../intranet/signin_up/intranet_login.html">Signin/up</a>
+
+                <span class="material-symbols-outlined">
+                    public<!--Icone Intranet-->
+                    </span>
+                <a href="intranet.html">Intranet</a>
+
+                <span class="material-symbols-outlined">
+                    handshake
+                    </span>
+                <a href="emicao_de_passagens.html">Passagens</a>
+            </nav>
+        </div>
     </header>
+        <!--Final Header-->
+
     <main>
-        <form onsubmit="pagto()">
+        <form class="form_pagamento" onsubmit="pagto()">
             <h4>Dados do pagamento:</h4><br />
             <fieldset>
                 <legend>Método de pagamento</legend>
-                <input type="radio" id="card" name="payment_method" value="card" onchange="payment('card')">
-                <label for="card">Cartão</label>
-                <input type="radio" id="boleto" name="payment_method" value="boleto" onchange="payment('boleto')">
-                <label for="boleto">Boleto</label>
-                <input type="radio" id="pix" name="payment_method" value="pix" onchange="payment('pix')">
-                <label for="pix">PIX</label>
+                        <img class="imgs_pags" src="/assets/cartao.png" alt="cartao">
+                        <input class="selecionar" type="radio" id="card" name="payment_method" value="card" onchange="payment('card')">
+                        <label for="card">Cartão</label>
+
+                        <img class="imgs_pags" src="/assets/Boleto.png" alt="boleto">
+                        <input class="selecionar" type="radio" id="boleto" name="payment_method" value="boleto" onchange="payment('boleto')">
+                        <label for="boleto">Boleto</label>
+                    
+                        <img class="imgs_pags" src="/assets/pix.png" alt="pix">
+                        <input class="selecionar" type="radio" id="pix" name="payment_method" value="pix" onchange="payment('pix')">
+                        <label for="pix">PIX</label>
             </fieldset>
             <div id="credit">
+                <br>
+
                 <form>
-                    <label for="number">Número do cartão</label><br />
+                    <label id="num_cartao" for="number">Número do cartão</label><br />
                     <input id="number" type="number" name="number"><br />
                     <label for="validate">Validade</label><br />
                     <input id="date" type="date" name="date"><br />
@@ -49,71 +77,83 @@
                     <input id="cpf" type="number" name="cpf">
                 </form>
             </div>
-            <div id="paper">
+
+            <div class="boleto" id="paper">
                 <h3>Pague seu boleto</h3>
                 <label for="total">Total da passagem <span id="ticket"></span></label>
                 <br />
                 <br />
                 <label for="code">34191.79001  23456.789012  34567.890123  4  12340000010000</label><br />
+                <br>
                 <button>Copiar código do boleto</button>
                 <!--Esse botão não é funcional.-->
-                <br />
-                <img src="../assets/codigodebarras.png">
+                <br/>
+                <br>
+                <img class="" src="../assets/codigodebarras.png">
             </div>
-            <div id="instant">
+            <div class="pix" id="instant">
                 <h3>Escaneie o QR-Code ou copie o código</h3>
                 <br />
                 <img src="../assets/QR_Code.png">
                 <br />
+                <br>
                 <label for="pix">00020126330014BR.GOV.BCB.PIX0114empresa@asanoairlines.com5204000053039865405100.005802BR5907ASANO6009SAO PAULO62070503***6304ABCD</label>
+                <br>
                 <button>Copiar código PIX</button>
                 <!--Esse botão não é funcional.-->
             </div>
-            <input id="terms" type="checkbox">Aceito os termos de uso.<br />
-            <button id="submit" type="submit">Proceder com o pagamento</button>
+
+            <div class="termos">
+                <input id="terms" type="checkbox">Aceito os termos de uso.<br />
+                <button id="submit" type="submit">Proceder com o pagamento</button>
+            </div>
         </form>
     </main>
-    <footer>
+
+        <!--Começo footer-->
+    <footer id="footer">
         <div class="footer_space">
-            <div>
-                <a href="../client/sac.html">Fale conosco</a><br />
-                <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
-                <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
-                <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
-            </div>
-    
-            <!-- Linha vertical -->
-            <hr class="vertical-line">
-    
-            <div>
-                By: Anna Carolina Soeiro Neves (HTML/JS)<br />
-                By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
-            </div> 
+             <div>
+                 <a href="../client/sac.html">Fale conosco</a><br />
+                 <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
+                 <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+                 <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+             </div>
+     
+             <!-- Linha vertical -->
+             <hr class="vertical-line">
+     
+             <div>
+                 By: Anna Carolina Soeiro Neves (HTML/JS)<br />
+                 By: Dylan Jair Huaygua Villca (Documentação/Bug Hunting)<br />
+             </div> 
+ 
+             <!-- Linha vertical -->
+             <hr class="vertical-line">
+ 
+             <div>
+                 By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+                 By: Leandro Sobral Silveira (CSS)<br />
+                 By: Lucas Santos da Paz (CSS)<br />
+             </div>
+     
+             <!-- Linha vertical -->
+             <hr class="vertical-line">
+     
+             <div>
+                 <img class="social" src="../assets/instagram.png">
+                 <label id="instagram">@Asano_Airlines</label><br />
+                 <img class="social" src="../assets/facebook.png">
+                 <label id="facebook">@Asano_Airlines</label><br />
+                 <img class="social" src="../assets/linkedin.png">
+                 <label id="linkedin">in/asano-airlines</label>
+             </div>
+         </div>
+             <br />
+             <label id="copyright">© All rights reserved.</label>
+     </footer>
+        <!--Final Footer-->
 
-            <!-- Linha vertical -->
-            <hr class="vertical-line">
-
-            <div>
-                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
-                By: Leandro Sobral Silveira (CSS)<br />
-                By: Lucas Santos da Paz (CSS)<br />
-            </div>
-    
-            <!-- Linha vertical -->
-            <hr class="vertical-line">
-    
-            <div>
-                <img class="social" src="../assets/instagram.png">
-                <label id="instagram">@Asano_Airlines</label><br />
-                <img class="social" src="../assets/facebook.png">
-                <label id="facebook">@Asano_Airlines</label><br />
-                <img class="social" src="../assets/linkedin.png">
-                <label id="linkedin">in/asano-airlines</label>
-            </div>
-        </div>
-            <br />
-            <label id="copyright">© All rights reserved.</label>
-    </footer>
     <script src="pagamento.js"></script>
 </body>
 </html>
