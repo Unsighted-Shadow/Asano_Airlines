@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Configura o Flexbox para a coluna */
+    font-family: "Roboto", serif;
+}
+
+header {
+    background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
+}
+
+/* A nossa logo dentro do header */
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Os links para navegar dentro do Header */
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+    background-color: #ffcc00;
+    color: #004d99;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilo do main */
+main {
+    background-color: white;
+    padding: 20px;
+    margin-left: 400px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+/* Estilo do parágrafo */
+p {
+    font-size: 50px;
+    color: #555;
+    line-height: 20px;
+}

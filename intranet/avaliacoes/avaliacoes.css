@@ -1,17 +1,11 @@
-/* Resetando alguns estilos padrões */
-* {
+html, body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Configura o Flexbox para a coluna */
+    font-family: "Roboto", serif;
 }
 
-/* Corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
 
 /*Começo header*/
 header {
@@ -27,7 +21,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
 }
 
-/* Estilo da imagem do logo */
+/* Tamanho da imagem da logo e formato também */
 header img {
     max-width: 120px;
     height: auto;
@@ -36,9 +30,9 @@ header img {
 
 }
 
-/* Links no cabeçalho */
+/* Esses são os links do cabeçalho */
 header a {
-    color: #0f0000;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
@@ -48,8 +42,13 @@ header a:hover {
     text-decoration: underline;
 }
 
+.feed{
+    color: #f9f9f9;
+}
+
 /* Título */
 h1 {
+    color: #f9f9f9;
     font-size: 28px;
     margin-top: 10px;
 }
@@ -57,12 +56,12 @@ h1 {
 /* Estilo da tabela */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* serve pra unificar as bordas da tabela*/
     margin-top: 20px;
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
 }
 
 th, td {
@@ -72,7 +71,7 @@ th, td {
 
 th {
     background-color: #005f73;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 tr:nth-child(even) {
@@ -95,24 +94,5 @@ tr:nth-child(even) {
 }
 
 #hideShow:hover {
-    background-color: #585858;
-}
-
-/* Estilo responsivo para telas pequenas */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 0;
-    }
-
-    header img {
-        max-width: 150px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-    #hideShow {
-        width: 100%;
-    }
+    background-color: #969696;
 }
