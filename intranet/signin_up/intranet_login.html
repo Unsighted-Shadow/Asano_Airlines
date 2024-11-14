@@ -5,28 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intranet Asano Airlines</title>
     <link rel="stylesheet" href="intranet.login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=add_task,home,login,public" rel="stylesheet" />
 </head>
-<header>
-    <a href="../../Homepage/index.html">Home</a>
-    <a href="cadastro.html">Cadastre-se</a>
-    <h1>Bem-vindo ao ambiente interno!</h1>
-</header>
 <body>
+        <!--Começo Header-->
+    <header>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="/assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/></a>
+            <nav class="nav-links">
+                <span class="material-symbols-outlined">
+                    home<!--Icone Home/Menu-->
+                </span>
+                <a href="../../Homepage/index.html">Home</a>
+                <span class="material-symbols-outlined">
+                    add_task
+                    </span>
+                <a href="cadastro.html">Cadastre-se</a>
+            </nav>
+        </div>
+    </header>
+        <!--Final Header-->
+
+        <h1>Bem-vindo ao ambiente interno!</h1>
+
     <main>
         <form onsubmit="user_login(event)">
-            <select id="category" name="category">
-                <option>Selecione--</option>
-                <option value="pax">Passageiro</option>
-                <option value="employee">Funcionário</option>
-                <option value="provider">Fornecedor</option>
-            </select>
-            <br /><br />
-            <label for="cpf">CPF:</label><br />
-            <input id="cpf" name="cpf" type="number"><br />
-            <label for="password">Senha:</label><br />
-            <input id="password" name="password" type="password"><br />
-            <button id="login" class="intranet" type="submit">Log-in</button>
-            <button id="signup" class="intranet"><a href="intranet/cadastro.html">Cadastrar-se</a></button>
+
+            <div class="logo_h2">
+                <img class="logo_login" src="/assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines.">
+                <h2>LOGIN!!!</h2>
+            </div>
+
+            <div class="form_login">
+                <select id="category" name="category">
+                    <option>Selecione--</option>
+                    <option value="pax">Passageiro</option>
+                    <option value="employee">Funcionário</option>
+                    <option value="provider">Fornecedor</option>
+                </select>
+                <br /><br />
+                <label class="lab1" for="cpf">CPF:</label><br />
+                <input id="cpf" name="cpf" type="number"><br />
+                <label class="lab2" for="password">Senha:</label><br />
+                <input id="password" name="password" type="password"><br />
+                <button id="login" class="intranet" type="submit">Log-in</button>
+                <button id="signup" class="intranet"><a href="intranet/cadastro.html">Cadastrar-se</a></button>
+            </div>
         </form>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
