@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Configura o Flexbox para a coluna */
+    font-family: "Roboto", serif;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do header */
+header {
+    background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+    background-color: #ffcc00;
+    color: #004d99;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* uma curta transição na cor */
+}
+
+/* ficar trocando de cor ao clicar*/
+button:hover {
+    background-color: #ffcc00;
+    color: #004d99;
+}
+
+
+/* Estilo da selação de relatórios*/
+select {
+    padding: 8px;
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo do input de data */
+input[type="date"] {
+    padding: 8px;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo do input de URL */
+input[type="url"] {
+    padding: 8px;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo da tabela */
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004d99;
+    color: white;
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    background-color: #004d99;
+    color: white;
+    padding: 2px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#copyright {
+    font-size: 20px;
+}
