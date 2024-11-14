@@ -1,0 +1,118 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/*Começo header*/
+header {
+    background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
+}
+
+/* Estilo da imagem do logo */
+header img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 120px;
+
+}
+
+/* Links no cabeçalho */
+header a {
+    color: #0f0000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #005f73;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo do botão Mostrar/Ocultar */
+#hideShow {
+    background-color: #0575d1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    width: 200px;
+    margin-left: 1px;
+    margin-right: auto;
+}
+
+#hideShow:hover {
+    background-color: #585858;
+}
+
+/* Estilo responsivo para telas pequenas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header img {
+        max-width: 150px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #hideShow {
+        width: 100%;
+    }
+}
