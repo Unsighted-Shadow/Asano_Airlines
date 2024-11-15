@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="curriculos.css">
 </head>
 <body onload="showResumes()">
+
+    <!--Começo Header-->
     <header>
-        <img src="../../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/>
-        <a href="../../Homepage/index.html">Home</a>
-        <a href="../intranet_homepages/pagina_inicial.html">Intranet Homepage</a>
-        <a href="../avaliacoes/avaliacoes.html">Avaliações</a>
-        <a href="../occurences/customer_care.html">SAC</a>
-        <br />
-        <h1>Currículos</h1>
+        <div class="menu">
+            <a href="../Homepage/index.html"><img class="logo" src="../../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/></a>
+            <nav class="nav-links">
+                <a href="../../Homepage/index.html">Home</a>
+                
+                <a href="../intranet_homepages/pagina_inicial.html">Intranet Homepage</a>
+
+                <a href="../avaliacoes/avaliacoes.html">Avaliações</a>
+
+                <a href="../occurences/customer_care.html">SAC</a>
+            </nav>
+        </div>
     </header>
+        <!--Final Header-->
+
     <label id="search">Pesquisar currículo(s):</label><br />
     <input type="text" name="resumes">
     <button id="search_resume" onclick="searchResume()">Pesquisar</button>
