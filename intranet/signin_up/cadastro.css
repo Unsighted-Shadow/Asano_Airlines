@@ -13,6 +13,114 @@ main {
     flex: 1; /* Ocupa o espaço restante, empurrando o footer para baixo */
 }
 
+/*Começo header*/
+header {
+    background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de destaque */
+}
+.menu {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+.logo {
+    width: 120px; /* Tamanho da logo */
+}
+.material-symbols-outlined {
+    color: white;
+    margin-top: -5px;
+    margin-right: -5%;
+}
+.nav-links {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #61B1E6; /* Cor de hover para links */
+    text-decoration: underline;
+}
+/*Final Header*/
+
+
+/*Começo Form*/
+form {
+    /*tamanho*/
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    padding: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+}
+form input {
+    width: 50%;
+}
+form button {
+    width: 120px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #61B1E6;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: #389fe4;
+}
+/*Labels 1...6*/
+.lab1 {
+    margin-right: 30%;
+}
+.lab2 {
+    margin-right: 34%;
+}
+.lab4 {
+    margin-right: 31%;
+}
+.lab5 {
+    margin-right: 31%;
+}
+.lab6 {
+    margin-right: 6%;
+}
+/*Começo*/
+.logo_h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo_login {
+    width: 35%;
+}
+/*Fim*/
+
+
+
+
 /* Inicio Footer */
 footer {
     position: relative;
