@@ -6,10 +6,10 @@ function showsac() {
        if(customer_care) {
    
            var table = document.getElementById("sacTable").getElementsByTagName("tbody")[0];
-           var newRow = table.insertRow();
        
            for(i = 0; i < customer_care.ticket.length ; i++) {
    
+               var newRow = table.insertRow();
                newRow.insertCell(0).innerHTML = customer_care.ticket[i].id;
                newRow.insertCell(1).innerHTML = customer_care.ticket[i].name;
                newRow.insertCell(2).innerHTML = customer_care.ticket[i].email;
