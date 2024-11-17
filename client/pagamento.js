@@ -36,3 +36,5 @@ function pagto(event) {
 
     window.open("../intranet/signin_up/intranet_login.html", "_self");
 }
+
+//tem que arrumar

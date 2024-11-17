@@ -15,3 +15,5 @@ function sendToPay(event) {
     localStorage.setItem("data_client", JSON.stringify(data_client));
     window.open("./pagamento.html", "_self");
 }
+
+//tem que arrumar

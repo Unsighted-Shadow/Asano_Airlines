@@ -6,3 +6,5 @@ function logout() {
     localStorage.removeItem("session");
     window.open("../../Homepage/index.html", "_self");
 }
+
+//pronta

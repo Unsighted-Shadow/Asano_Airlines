@@ -64,5 +64,5 @@ function popula_destinos_internacionais() {
 popula_destinos_domesticos();
 popula_destinos_internacionais();
 
-
+//tem que formatar
    
