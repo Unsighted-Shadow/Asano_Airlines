@@ -22,19 +22,15 @@ function pagto(event) {
 
     event.preventDefault();
 
-    var user = JSON.parse(localStorage.getItem("data_client"));
-    var session = JSON.parse(localStorage.getItem("session"));
-
+    var user = JSON.parse(localStorage.getItem('session'));
+    
     var pagamento = {
-        confirmacao,
-        user: cpf,
+        confirm: true,
     }
 
-    if (pagamento && session) {
+    if (pagamento && user.cpf === 'session') {
         window.open("../intranet/intranet_homepages/cliente.html", "_self");
     }
 
     window.open("../intranet/signin_up/intranet_login.html", "_self");
 }
-
-//tem que arrumar
