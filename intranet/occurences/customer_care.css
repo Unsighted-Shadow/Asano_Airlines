@@ -63,35 +63,22 @@ header {
 
 #sacTable {
     width: 100%;
+    margin: auto;
+    margin-top: 1%;
     border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    text-align: left;
-}
-
-#sacTable thead tr {
-    background-color: #61B1E6;
-    color: white;
+    border: 1px solid #67abf0;
     text-align: center;
 }
-
-#sacTable th, #sacTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
+thead {
+    background-color: #0c5fb3;
+    color: white;
+}
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#sacTable tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
 
-#sacTable tbody tr:hover {
-    background-color: #d0e7f9;
-}
-
-#sacTable th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
 
 /*button*/
 button {
