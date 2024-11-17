@@ -17,3 +17,22 @@ function payment(pay) {
             break;
     }
 }
+
+function pagto(event) {
+
+    event.preventDefault();
+
+    var user = JSON.parse(localStorage.getItem("data_client"));
+    var session = JSON.parse(localStorage.getItem("session"));
+
+    var pagamento = {
+        confirmacao,
+        user: cpf,
+    }
+
+    if (pagamento && session) {
+        window.open("../intranet/intranet_homepages/cliente.html", "_self");
+    }
+
+    window.open("../intranet/signin_up/intranet_login.html", "_self");
+}

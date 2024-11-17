@@ -12,7 +12,7 @@
         <a href="../intranet/signin_up/intranet_login.html">Sign-in</a>
     </header>
     <main>
-        <form onsubmit="sendToPay()">
+        <form onsubmit="sendToPay(event)">
             <legend>Insira seus dados para a emissão da passagem:</legend>
             <label for="pax">Nome completo</label><br />
             <input type="text" id="pax" name="pax"><br />
@@ -64,5 +64,6 @@
             <br />
             <label id="copyright">© All rights reserved.</label>
     </footer>
+    <script src="emissao_de_passagens.js"></script>
 </body>
 </html>

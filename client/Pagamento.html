@@ -38,14 +38,14 @@
                 <span class="material-symbols-outlined">
                     handshake
                     </span>
-                <a href="emicao_de_passagens.html">Passagens</a>
+                <a href="emissao_de_passagens.html">Passagens</a>
             </nav>
         </div>
     </header>
         <!--Final Header-->
 
     <main>
-        <form class="form_pagamento" onsubmit="pagto()">
+        <form class="form_pagamento" onsubmit="pagto(event)">
             <h4>Dados do pagamento:</h4><br />
             <fieldset>
                 <legend>Método de pagamento</legend>
@@ -64,7 +64,7 @@
             <div id="credit">
                 <br>
 
-                <form>
+                <div>
                     <label id="num_cartao" for="number">Número do cartão</label><br />
                     <input id="number" type="number" name="number"><br />
                     <label for="validate">Validade</label><br />
@@ -75,7 +75,7 @@
                     <input id="name" type="text" name="name"><br />
                     <label for="cpf">CPF</label><br />
                     <input id="cpf" type="number" name="cpf">
-                </form>
+                </div>
             </div>
 
             <div class="boleto" id="paper">
