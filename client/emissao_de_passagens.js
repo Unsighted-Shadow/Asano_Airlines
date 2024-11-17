@@ -1,6 +1,6 @@
 function sendToPay(event) {
 
-    event.preventDefault;
+    event.preventDefault();
 
     var name = document.getElementById("pax").value
     var cpf = document.getElementById("cpf").value
@@ -15,5 +15,3 @@ function sendToPay(event) {
     localStorage.setItem("data_client", JSON.stringify(data_client));
     window.open("./pagamento.html", "_self");
 }
-
-//tem que arrumar

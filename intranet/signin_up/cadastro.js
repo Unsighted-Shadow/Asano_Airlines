@@ -1,4 +1,6 @@
-function signup() {
+function signup(event) {
+
+    event.preventDefault();
 
     var signups = JSON.parse(localStorage.getItem("signups"));
     
@@ -38,7 +40,7 @@ function signup() {
 
         signups.signup.push(user);
         localStorage.setItem("signups", JSON.stringify(signups));
-        console.log(signups);
+        window.open("./intranet_login.html", "_self");
     }
 
 }
