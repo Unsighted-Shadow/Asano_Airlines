@@ -1,18 +1,18 @@
-/*Inicio css sac (fale conosco pdp!?)*/
 /*Importar fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Começo estilização*/
 html, body {
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column; /* Configura o Flexbox para a coluna */
 }
-
 main {
     flex: 1; /* Ocupa o espaço restante, empurrando o footer para baixo */
 }
-/*Começo header*/
+
+/*Header Começo*/
 header {
     background-image: url('/assets/pngtree-dotted-world-map-of-square-dots-on-dark-background-image_1150067-transformed.jpeg');
     background-size: cover;
@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
+    width: 30%;
 }
 .logo {
     width: 120px; /* Tamanho da logo */
@@ -54,10 +54,11 @@ header {
     color: #61B1E6; /* Cor de hover para links */
     text-decoration: underline;
 }
+/*Final Header*/
 
+/*Formulário*/
 
-/*Começo Estilização Formulário*/
-.formulario_ajuda {
+form {
     width: 500px;
     padding: 8px;
     padding-bottom: 50px;
@@ -71,20 +72,22 @@ header {
     border-radius: 8px;
     box-shadow: 4px 6px 29px -2px rgba(0,0,0,0.3);
 }
+.form_emissao {
+    margin-top: 20px;
+}
 
-.formulario_ajuda input,
-.formulario_ajuda select,
-.formulario_ajuda textarea {
-    width: 90%;
+form input{
+    width: 30%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.formulario_ajuda button {
+form button {
     width: 200px;
     padding: 10px;
+    margin-top: 5%;
     color: white;
     background-color: #61B1E6;
     border: none;
@@ -92,14 +95,18 @@ header {
     border-radius: 5px;
     font-size: 16px;
 }
-.formulario_ajuda button:hover {
+form button:hover {
     background-color: #619EE6;
 }
 
-/* Footer */
+
+
+
+/*Começo Footer*/
 footer {
     position: relative;
     padding: 20px;
+    margin-top: 50px;
     background-color: #ECECEE;
     color: #4D4D4D;
     font-family: "Roboto", sans-serif;
@@ -108,17 +115,16 @@ footer {
     align-items: center;
     border-top: 1px solid black;
 }
-
 .footer_space {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-
 footer img {
     width: 4%;
 }
 
+/*Copyrights*/
 #copyright {
     margin-top: 20px;
     display: flex;
@@ -128,7 +134,7 @@ footer img {
     width: 100%;
 }
 
-/* Linha vertical no footer */
+/* Linha vertical e horizontal no footer */
 .vertical-line {
     border: none;
     border-left: 2px solid #4D4D4D;
@@ -136,3 +142,5 @@ footer img {
     margin: 0 20px;
     align-self: stretch;
 }
+
+/*Final Footer*/
