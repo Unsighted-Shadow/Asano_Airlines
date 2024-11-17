@@ -4,54 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asano Airlines</title>
+    <link rel="stylesheet" href="emissao_de_passagens.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=home,login,public" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="../assets/asano_airlines_logo.png">
-        <a href="../Homepage/index.html">Home</a>
-        <a href="../intranet/signin_up/intranet_login.html">Sign-in</a>
-    </header>
+        <!--Começo Header-->
+        <header>
+            <div class="menu">
+                <a href="index.html"><img class="logo" src="../assets/asano_airlines_logo.png" alt="Um globo rodeado por dois aviões sendo seguidos por uma cauda amarela, fronte ao globo em letras vermelhas e azuis está escrito Asano Airlines."/></a>
+                    <nav class="nav-links">
+                        <span class="material-symbols-outlined">
+                            home<!--Icone home/menu-->
+                        </span>
+                        <a href="index.html">Home</a>
+                        
+                        <span class="material-symbols-outlined">
+                            login<!--Icone login-->
+                        </span>
+                        <a href="../intranet/signin_up/intranet_login.html">Sign-in/up</a>
+    
+                        <span class="material-symbols-outlined">
+                            public<!--Icone Intranet-->
+                            </span>
+                        <a href="intranet.html">Intranet</a>
+                    </nav>
+            </div>
+    
+        </header>
+            <!--Final Header-->
+
     <main>
         <form onsubmit="sendToPay(event)">
-            <legend>Insira seus dados para a emissão da passagem:</legend>
-            <label for="pax">Nome completo</label><br />
-            <input type="text" id="pax" name="pax"><br />
-            <label for="cpf">CPF</label><br />
-            <input type="number" id="cpf" name="cpf"><br />
-            <label for="birthday">Data de nascimento</label><br />
-            <input type="date" id="birthday" name="birthday"><br />
-            <button id="submit" type="submit">Enviar</button><br />
+            
+                <legend>Insira seus dados para a emissão da passagem:</legend>
+
+            <div class="form_emissao">
+                <label for="pax">Nome completo:</label><br />
+                <input type="text" id="pax" name="pax"><br />
+                <label for="cpf">CPF:</label><br />
+                <input type="number" id="cpf" name="cpf"><br />
+                <label for="birthday">Data de nascimento:</label><br />
+                <input type="date" id="birthday" name="birthday"><br />
+                <button id="submit" type="submit">Enviar</button><br />
+            </div>
         </form>
     </main>
+
+        <!--Começo Footer-->
     <footer>
         <div class="footer_space">
             <div>
                 <a href="../client/sac.html">Fale conosco</a><br />
-                <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
-                <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
+                <label id="enterprise">airlines@asanoairlines.com</label><br />
+                <label id="ourtel">+55 (11) 6289-5278</label><br />
                 <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
             </div>
-    
+
             <!-- Linha vertical -->
             <hr class="vertical-line">
-    
+
             <div>
                 By: Anna Carolina Soeiro Neves (HTML/JS)<br />
                 By: Dylan Jair Huaygua Villca (Bug Hunting)<br />
-            </div> 
+                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
+            </div>
 
             <!-- Linha vertical -->
             <hr class="vertical-line">
 
             <div>
-                By: Júlia Praisler Marques (Design/Marketing Digital)<br />
-                By: Leandro Sobral Silveira (CSS)<br />
+                By: Leandro Sobral Silveira (Documentação/CSS)<br />
                 By: Lucas Santos da Paz (CSS)<br />
             </div>
-    
+
             <!-- Linha vertical -->
             <hr class="vertical-line">
-    
+
             <div>
                 <img class="social" src="../assets/instagram.png">
                 <label id="instagram">@Asano_Airlines</label><br />
@@ -61,9 +89,10 @@
                 <label id="linkedin">in/asano-airlines</label>
             </div>
         </div>
-            <br />
-            <label id="copyright">© All rights reserved.</label>
+        <br />
+        <label id="copyright">© All rights reserved.</label>
     </footer>
+        <!--Final Footer-->
     <script src="./emissao_de_passagens.js"></script>
 </body>
 </html>
