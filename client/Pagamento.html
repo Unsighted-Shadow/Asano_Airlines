@@ -14,38 +14,29 @@
 </head>
 
 <body>
-
-        <!--Começo Header-->
     <header>
         <div class="menu">
             <a href="../Homepage/index.html"><img class="logo" src="/assets/asano_airlines_logo.png" alt="Logo asano airlines"></a>
             <nav class="nav-links">
                 <span class="material-symbols-outlined">
-                    home<!--Icone home/menu-->
+                    home
                 </span>
                 <a href="../Homepage/index.html">Menu</a>
                 
                 <span class="material-symbols-outlined">
-                    login<!--Icone Login-->
+                    login
                 </span>
                 <a href="../intranet/signin_up/intranet_login.html">Signin/up</a>
 
                 <span class="material-symbols-outlined">
-                    public<!--Icone Intranet-->
-                    </span>
-                <a href="intranet.html">Intranet</a>
-
-                <span class="material-symbols-outlined">
                     handshake
                     </span>
-                <a href="emissao_de_passagens.html">Passagens</a>
+                <a href="./emissao_de_passagens.html">Passagens</a>
             </nav>
         </div>
     </header>
-        <!--Final Header-->
 
     <main>
-        <!--Tem que arrumar-->
         <form class="form_pagamento" onsubmit="pagto(event)">
             <h4>Dados do pagamento:</h4><br />
             <fieldset>
@@ -87,7 +78,6 @@
                 <label for="code">34191.79001  23456.789012  34567.890123  4  12340000010000</label><br />
                 <br>
                 <button type="button">Copiar código do boleto</button>
-                <!--Esse botão não é funcional.-->
                 <br/>
                 <br>
                 <img class="" src="../assets/codigodebarras.png">
@@ -101,7 +91,6 @@
                 <label for="pix">00020126330014BR.GOV.BCB.PIX0114empresa@asanoairlines.com5204000053039865405100.005802BR5907ASANO6009SAO PAULO62070503***6304ABCD</label>
                 <br>
                 <button type="button">Copiar código PIX</button>
-                <!--Esse botão não é funcional.-->
             </div>
 
             <div class="termos">
@@ -111,17 +100,15 @@
         </form>
     </main>
 
-        <!--Começo footer-->
     <footer id="footer">
         <div class="footer_space">
              <div>
-                 <a href="../client/sac.html">Fale conosco</a><br />
+                 <a href="./sac.html">Fale conosco</a><br />
                  <label id="sac" for="sac">airlines@asanoairlines.com</label><br />
                  <label id="ourtel" for="ourtel">+55 (11) 6289-5278</label><br />
-                 <a href="../client/trabalhe_conosco.html">Trabalhe Conosco</a><br />
+                 <a href="./trabalhe_conosco.html">Trabalhe Conosco</a><br />
              </div>
      
-             <!-- Linha vertical -->
              <hr class="vertical-line">
      
              <div>
@@ -129,7 +116,6 @@
                  By: Dylan Jair Huaygua Villca (Bug Hunting)<br />
              </div> 
  
-             <!-- Linha vertical -->
              <hr class="vertical-line">
  
              <div>
@@ -138,7 +124,6 @@
                  By: Lucas Santos da Paz (CSS)<br />
              </div>
      
-             <!-- Linha vertical -->
              <hr class="vertical-line">
      
              <div>
@@ -153,7 +138,6 @@
              <br />
              <label id="copyright">© All rights reserved.</label>
      </footer>
-        <!--Final Footer-->
 
     <script src="pagamento.js"></script>
 </body>
