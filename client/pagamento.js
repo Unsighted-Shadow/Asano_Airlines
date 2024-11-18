@@ -21,6 +21,7 @@ function payment(pay) {
 function pagto(event) {
 
     event.preventDefault();
+    console.log("Entrou aqui!");
 
     var user = JSON.parse(localStorage.getItem('session'));
     
@@ -28,9 +29,13 @@ function pagto(event) {
         confirm: true,
     }
 
-    if (pagamento && user.cpf === 'session') {
+    localStorage.setItem('pagamento', JSON.stringify(pagamento));
+    console.log(user);
+
+    if (user) {
         window.open("../intranet/intranet_homepages/cliente.html", "_self");
+    } else {
+        window.open("../intranet/signin_up/intranet_login.html", "_self");
     }
 
-    window.open("../intranet/signin_up/intranet_login.html", "_self");
 }

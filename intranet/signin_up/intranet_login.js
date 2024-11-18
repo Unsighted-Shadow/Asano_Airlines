@@ -17,7 +17,8 @@ function user_login(event) {
             
             var session_user = {
                 name: users.signup[index].name_user,
-                category
+                category,
+                cpf,
             }
 
             localStorage.setItem('session', JSON.stringify(session_user));
